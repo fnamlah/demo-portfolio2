@@ -5,6 +5,12 @@
   .main-btn {
     margin-bottom: 10rem;
   }
+  /* Mobile Nav */
+  .btn-mobile-nav {
+    display: block;
+    /* For button change */
+    z-index: 1000;
+  }
   .main-nav {
     background-color: rgba(255, 255, 255, 0.94);
 
@@ -52,12 +58,7 @@
     flex-direction: column;
     gap: 4.8rem;
   }
-  /* Mobile Nav */
-  .btn-mobile-nav {
-    display: block;
-    /* For button change */
-    z-index: 1000;
-  }
+  
   .header-link:link,
   .header-link:visited {
     color: #2a2c3a;
