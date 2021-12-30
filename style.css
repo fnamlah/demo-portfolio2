@@ -29,10 +29,10 @@ html {
   position: relative;
   
   
-   display: flex;
+/*    display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #fff; */
+  /* background-color: #fff; */ */
 
   height: 9.6rem;
   padding: 0 4.8rem;
