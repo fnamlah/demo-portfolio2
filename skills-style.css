@@ -1,0 +1,184 @@
+.grid--1-colz {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* ------------------------- */
+/* ------  Headline & Text  ----- */
+.col-1-header {
+  color: #e9b44c;
+  font-size: 3.6rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+.col-1-text {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+/* ------------------------- */
+/* ------  Skills & Stack  ----- */
+.col-1-flexbox {
+  display: flex;
+  gap: 8.6rem;
+  margin-bottom: 2.4rem;
+}
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  list-style: none;
+}
+
+.skill-link {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  text-decoration: none;
+  color: #fff;
+}
+
+.skill-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skill-icon {
+  height: 4.4rem;
+  width: 4.4rem;
+  stroke: #fff;
+}
+
+.skill {
+  font-size: 1.8rem;
+}
+
+.skill-link:link,
+.skill-link:visited {
+  cursor: pointer;
+}
+
+.skill-link:hover,
+.skill-link:active {
+  color: #e9b44c;
+}
+
+/* Languages */
+.col-2-heading {
+  margin-bottom: 1.6rem;
+}
+
+.lags {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.lang-element {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.lang-itself {
+  font-size: 1.6rem;
+}
+.lang-text {
+  font-size: 1.6rem;
+}
+
+.lang-box {
+}
+
+/* Other Skills */
+.other-skill-heading {
+  font-size: 3.6rem;
+  color: #e9b44c;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+
+.other-skill-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.other-skill-text {
+  font-size: 1.6rem;
+}
+
+.col-2 {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+}
+
+/* Media Queries */
+@media (max-width: 32em) {
+  .col-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .other-skill-text {
+    font-size: 1.2rem;
+  }
+  .other-skill-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+  .lang-itself {
+    font-size: 1.2rem;
+  }
+  .lang-text {
+    font-size: 1.2rem;
+  }
+  .col-2-heading {
+    font-size: 1.8rem;
+  }
+  .col-1-header {
+    font-size: 2.4rem;
+  }
+  .col-1-text {
+    font-size: 1.2rem;
+  }
+  .col-1-flexbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.6rem;
+  }
+  .skill-icon {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .skill {
+    font-size: 1.2rem;
+  }
+  .btn-mobile-nav {
+    display: block;
+    /* For button change */
+    z-index: 1000;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 1000;
+  }
+
+  .nav-open .icon-mobile-nav[name='close-outline'] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
+    display: none;
+  }
+}
